@@ -58,7 +58,7 @@ const Footer: React.FC<FooterProps> = ({
             onChange={(e) => setCurrentCommand(e.target.value)}
             onKeyDown={(e) => {
               handleKeyDown(e);
-              requestAnimationFrame(updateCaret); 
+              requestAnimationFrame(updateCaret);
             }}
             onSelect={updateCaret}
             className="absolute inset-0 w-full h-full opacity-0 caret-transparent"
